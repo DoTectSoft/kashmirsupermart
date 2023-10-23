@@ -1,4 +1,6 @@
 import "./Homepage.css";
-const Homepage = function () {};
+const Homepage = function () {
+  return <div>Homepage</div>;
+};
 
 export default Homepage;
