@@ -1,0 +1,16 @@
+.nav-menu-container {
+  background-color: bisque;
+}
+
+.nav-menu-list {
+  background-color: bisque;
+  list-style: none;
+  display: flex;
+  justify-content: right;
+}
+.nav-menu-list * {
+  margin-left: 10px;
+}
+.nav-menu-list a {
+  text-decoration: none;
+}
