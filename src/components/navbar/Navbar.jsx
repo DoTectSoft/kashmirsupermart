@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+
+import PhoneIcon from "../../assets/PhoneCall.svg";
 import "./Navbar.css";
 
 const Navbar = function () {
   return (
-    <>
+    <div className="navigation-bar-container">
       <nav className="nav-menu-container">
         <ul className="nav-menu-list">
           <li>
@@ -23,7 +25,11 @@ const Navbar = function () {
           </li>
         </ul>
       </nav>
-    </>
+      <div className="phone">
+        <img src={PhoneIcon} alt="phone" />
+        <div>+91 9018667339</div>
+      </div>
+    </div>
   );
 };
 export default Navbar;
