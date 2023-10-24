@@ -1,6 +1,6 @@
 import "./Searchbar.css";
-import SearchIcon from "../../assets/Searchicon.svg";
-import Colors from "../../utils/constants/Colors";
+import SearchIcon from "../../../assets/Searchicon.svg";
+import Colors from "../../../utils/constants/Colors";
 
 const Searchbar = function () {
   return (

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import PhoneIcon from "../../assets/PhoneCall.svg";
+import PhoneIcon from "../../../assets/PhoneCall.svg";
 import "./Navbar.css";
 
 const Navbar = function () {
