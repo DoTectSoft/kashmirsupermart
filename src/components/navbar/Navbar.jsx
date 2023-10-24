@@ -18,15 +18,17 @@ const Navbar = function () {
             <Link to={"/blog"}>Blog</Link>
           </li>
           <li>
-            <Link to={"/about"}>About Us</Link>
+            <Link to={"/about"}>About us</Link>
           </li>
           <li>
-            <Link to={"/contact"}>Contact Us</Link>
+            <Link to={"/contact"}>Contact us</Link>
           </li>
         </ul>
       </nav>
-      <div className="phone">
-        <img src={PhoneIcon} alt="phone" />
+      <div className="phone-container">
+        <picture className="phoneicon-container">
+          <img className="phoneicon-img" src={PhoneIcon} alt="phone" />
+        </picture>
         <div>+91 9018667339</div>
       </div>
     </div>

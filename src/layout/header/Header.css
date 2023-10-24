@@ -10,7 +10,11 @@
   width: min(1280px, 80%, 1280px);
   margin-inline: auto;
 }
-
+.logo-container,
+.searchbar-component-container,
+.favorites-cart-container {
+  height: 45px;
+}
 .location {
   display: flex;
   font-size: 0.8rem;
@@ -28,9 +32,18 @@
   display: flex;
   /* justify-content: center; */
   align-items: center;
+  /* background-color: red; */
 }
-.logo {
-  width: 30%;
+.logo-bar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo-container {
+  /* background-color: violet; */
+  flex: 1 1 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .logo-img {
   width: 100%;
@@ -40,4 +53,12 @@
   height: 60px;
   display: flex;
   align-items: center;
+}
+.searchbar-component-container {
+  flex: 1 1 50%;
+}
+.favorites-cart-container {
+  /* background-color: orange; */
+  width: 100px;
+  flex: 1 1 25%;
 }
