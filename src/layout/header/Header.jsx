@@ -1,10 +1,13 @@
-import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/header/navbar/Navbar";
+import Searchbar from "../../components/header/searchbar/Searchbar";
 
 import Colors from "../../utils/constants/Colors";
 import LocationIcon from "../../assets/MapPin.svg";
 import Logo from "../../assets/Logo.svg";
+import FavoriteIcon from "../../assets/Heart.svg";
+import BagIcon from "../../assets/Bag.svg";
 import "./Header.css";
-import Searchbar from "../../components/searchbar/Searchbar";
+
 const Header = function () {
   return (
     <header className="document-header">
@@ -18,6 +21,7 @@ const Header = function () {
                 alt="location icon"
               />
             </picture>
+
             <p>Store Location: Srinagar Jammu & Kashmir</p>
           </div>
         </div>
@@ -30,7 +34,25 @@ const Header = function () {
           <div className="searchbar-component-container">
             <Searchbar />
           </div>
-          <div className="favorites-cart-container"></div>
+          <div className="favorites-cart-container">
+            <picture className="favorites-icon-container">
+              <img
+                className="favorites-icon-img"
+                src={FavoriteIcon}
+                alt="favorite icon"
+              />
+            </picture>
+            <div className="separator-container">
+              <div className="separator"></div>
+            </div>
+            <picture className="bag-icon-container">
+              <img className="bag-icon-img" src={BagIcon} alt="Bag icon" />
+            </picture>
+            <div className="cart-info">
+              <p className="shopping-cart">Shopping cart:</p>
+              <p>Rs. 570.00</p>
+            </div>
+          </div>
         </div>
       </section>
       <section
