@@ -1,16 +1,16 @@
 import "./App.css";
 import Header from "./layout/header/Header";
-import Routers from "./routers/Routers";
+import Main from "./layout/main/Main";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <div>
       <BrowserRouter>
         <Header />
-        <Routers />
+        <Main />
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

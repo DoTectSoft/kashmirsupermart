@@ -1,3 +1,13 @@
-const Colors = function () {};
+const Colors = {
+  SOFTPRIMARY: "#84D187",
+  PRIMARY: "#00B207",
+  HARDPRIMARY: "#2C742F",
+  WARNING: "#FF8A00",
+  DANGER: "#EA4B48",
+  WHITE: "#FFFFFF",
+  GRAY600: "#666666",
+  GRAY700: "#4D4D4D",
+  GRAY800: "#333333",
+};
 
 export default Colors;

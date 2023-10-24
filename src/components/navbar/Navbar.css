@@ -1,16 +1,25 @@
-.nav-menu-container {
-  background-color: bisque;
+.navigation-bar-container {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: bisque; */
 }
 
 .nav-menu-list {
-  background-color: bisque;
+  /* background-color: pink; */
   list-style: none;
   display: flex;
-  justify-content: right;
 }
 .nav-menu-list * {
   margin-left: 10px;
 }
 .nav-menu-list a {
   text-decoration: none;
+  color: white;
+}
+.phone {
+  /* background-color: cyan; */
+  display: flex;
+  color: white;
 }
