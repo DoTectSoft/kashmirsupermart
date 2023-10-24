@@ -4,6 +4,7 @@ import Colors from "../../utils/constants/Colors";
 import LocationIcon from "../../assets/MapPin.svg";
 import Logo from "../../assets/Logo.svg";
 import "./Header.css";
+import Searchbar from "../../components/searchbar/Searchbar";
 const Header = function () {
   return (
     <header className="document-header">
@@ -23,9 +24,13 @@ const Header = function () {
       </section>
       <section className="logo-section">
         <div className="logo-bar">
-          <div className="logo">
+          <div className="logo-container">
             <img className="logo-img" src={Logo} alt="logo" />
           </div>
+          <div className="searchbar-component-container">
+            <Searchbar />
+          </div>
+          <div className="favorites-cart-container"></div>
         </div>
       </section>
       <section

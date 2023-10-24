@@ -1,25 +1,44 @@
 .navigation-bar-container {
   /* width: 100%; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* background-color: bisque; */
+  /* background-color: lightgreen; */
 }
-
+.nav-menu-container {
+  flex: 1 1 70%;
+  /* background-color: red; */
+}
 .nav-menu-list {
   /* background-color: pink; */
   list-style: none;
   display: flex;
+  justify-content: flex-start;
 }
 .nav-menu-list * {
-  margin-left: 10px;
+  margin-right: 10px;
+  /* background-color: green; */
 }
 .nav-menu-list a {
   text-decoration: none;
   color: white;
 }
-.phone {
+.phone-container {
   /* background-color: cyan; */
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   color: white;
+  flex: 1 1 30%;
+}
+.phoneicon-container {
+  width: 20px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phoneicon-img {
+  width: 100%;
 }
