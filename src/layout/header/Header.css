@@ -185,4 +185,90 @@
     width: 14px;
     height: 14px;
   }
+  .favorites-icon-container {
+    min-width: 30px;
+  }
+  .bag-icon-container {
+    min-width: 30px !important;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .location-section {
+    min-height: 25px;
+  }
+  .location {
+    font-size: 0.6rem;
+  }
+  .location-icon-container {
+    width: 9px;
+  }
+  .logo-img {
+    width: 70%;
+  }
+  .favorites-icon-container {
+    min-width: 15px;
+  }
+  .bag-icon-container {
+    min-width: 15px !important;
+  }
+  .bag-info {
+    font-size: 0.5rem;
+  }
+  .searchbar-section {
+    max-width: 250px;
+  }
+  .searchbar-container {
+    border-radius: 4px;
+  }
+  .navbar-section {
+    min-height: 35px;
+  }
+  .nav-menu-container {
+    min-width: 240px;
+    max-width: 240px;
+    font-size: 0.6rem;
+  }
+  .phone-container {
+    min-width: 90px;
+    max-width: 90px;
+    font-size: 0.6rem;
+  }
+  .phoneicon-container {
+    width: 11px;
+    height: 11px;
+  }
+  .logo-container,
+  .searchbar-component-container,
+  .favorites-cart-container {
+    min-height: 20px;
+    max-height: 20px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .location-section {
+    min-height: 20px;
+  }
+  .location {
+    font-size: 0.5rem;
+  }
+  .location-icon-container {
+    width: 8px;
+  }
+  .logo-img {
+    width: 65%;
+  }
+  .nav-menu-container {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .search-button {
+    font-size: 0.5rem;
+  }
+  .navbar-section {
+    min-height: 25px;
+  }
 }

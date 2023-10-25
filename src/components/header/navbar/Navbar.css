@@ -1,33 +1,37 @@
 .navigation-bar-container {
-  /* width: 100%; */
-  /* position: relative; */
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
   align-items: center;
-  /* background-color: lightgreen; */
 }
 .nav-menu-container {
   flex: 1 1 70%;
   min-width: 340px;
-  /* background-color: red; */
 }
 .nav-menu-list {
-  /* background-color: pink; */
   list-style: none;
   display: flex;
   justify-content: flex-start;
 }
 .nav-menu-list * {
   margin-right: 10px;
-  /* background-color: green; */
 }
 .nav-menu-list a {
   text-decoration: none;
   color: white;
 }
+.burger-menu {
+  display: none;
+}
+.burger-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.burger-img {
+  width: 45%;
+}
 .phone-container {
-  /* background-color: cyan; */
   display: flex;
   align-items: center;
   justify-content: flex-end;
