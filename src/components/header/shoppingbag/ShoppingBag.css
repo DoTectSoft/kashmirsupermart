@@ -1,0 +1,24 @@
+.bag-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+.bag-icon-img {
+  width: 100%;
+  height: 100%;
+}
+.bag-icon-img:hover {
+  cursor: pointer;
+}
+.bag-info {
+  /* background-color: green; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 100px;
+}

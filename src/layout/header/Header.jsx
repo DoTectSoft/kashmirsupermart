@@ -1,12 +1,12 @@
 import Navbar from "../../components/header/navbar/Navbar";
 import Searchbar from "../../components/header/searchbar/Searchbar";
+import Favorites from "../../components/header/favorites/Favorites";
 
 import Colors from "../../utils/constants/Colors";
 import LocationIcon from "../../assets/MapPin.svg";
 import Logo from "../../assets/Logo.svg";
-import FavoriteIcon from "../../assets/Heart.svg";
-import BagIcon from "../../assets/Bag.svg";
 import "./Header.css";
+import ShoppingBag from "../../components/header/shoppingbag/ShoppingBag";
 
 const Header = function () {
   return (
@@ -21,40 +21,35 @@ const Header = function () {
                 alt="location icon"
               />
             </picture>
-
             <p>Store Location: Srinagar Jammu & Kashmir</p>
           </div>
         </div>
       </section>
+
       <section className="logo-section">
         <div className="logo-bar">
           <div className="logo-container">
             <img className="logo-img" src={Logo} alt="logo" />
           </div>
-          <div className="searchbar-component-container">
-            <Searchbar />
-          </div>
-          <div className="favorites-cart-container">
-            <picture className="favorites-icon-container">
-              <img
-                className="favorites-icon-img"
-                src={FavoriteIcon}
-                alt="favorite icon"
-              />
-            </picture>
-            <div className="separator-container">
-              <div className="separator"></div>
+          <div className="search-cart-container">
+            <div className="searchbar-component-container">
+              <Searchbar />
             </div>
-            <picture className="bag-icon-container">
-              <img className="bag-icon-img" src={BagIcon} alt="Bag icon" />
-            </picture>
-            <div className="cart-info">
-              <p className="shopping-cart">Shopping cart:</p>
-              <p>Rs. 570.00</p>
+            <div className="favorites-cart-container">
+              <div className="favorites-component-container">
+                <Favorites />
+              </div>
+              <div className="separator-container">
+                <div className="separator"></div>
+              </div>
+              <div className="shoppingbag-component-container">
+                <ShoppingBag />
+              </div>
             </div>
           </div>
         </div>
       </section>
+
       <section
         className="navbar-section"
         style={{ backgroundColor: Colors.GRAY800 }}
