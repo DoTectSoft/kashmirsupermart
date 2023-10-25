@@ -1,0 +1,18 @@
+.nav-burgermenu-container {
+  /* background-color: green !important; */
+  position: absolute;
+  top: 25.5px;
+  width: 70px;
+  padding: 5px;
+  font-size: 0.6rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav-burgermenu-list {
+  list-style: none;
+}
+
+.nav-burgermenu-list a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 
+import BurgerIcon from "../../../assets/BurgerIcon.svg";
 import PhoneIcon from "../../../assets/PhoneCall.svg";
 import "./Navbar.css";
 
-const Navbar = function () {
+const Navbar = function ({ isVisible, setIsVisible }) {
   return (
     <div className="navigation-bar-container">
       <nav className="nav-menu-container">
@@ -24,6 +25,18 @@ const Navbar = function () {
             <Link to={"/contact"}>Contact us</Link>
           </li>
         </ul>
+      </nav>
+      <nav className="burger-menu">
+        <picture className="burger-container">
+          <img
+            className="burger-img"
+            src={BurgerIcon}
+            alt="burger-img"
+            onClick={() => {
+              setIsVisible(!isVisible);
+            }}
+          />
+        </picture>
       </nav>
       <div className="phone-container">
         <picture className="phoneicon-container">

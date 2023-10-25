@@ -7,8 +7,12 @@ import LocationIcon from "../../assets/MapPin.svg";
 import Logo from "../../assets/Logo.svg";
 import "./Header.css";
 import ShoppingBag from "../../components/header/shoppingbag/ShoppingBag";
+import NavDropdown from "../../components/header/navdropdown/NavDropdown";
+import { useState } from "react";
 
 const Header = function () {
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <header className="document-header">
       <section className="location-section">
@@ -55,7 +59,8 @@ const Header = function () {
         style={{ backgroundColor: Colors.GRAY800 }}
       >
         <div className="navigation-bar">
-          <Navbar />
+          <NavDropdown isVisible={isVisible} />
+          <Navbar isVisible={isVisible} setIsVisible={setIsVisible} />
         </div>
       </section>
     </header>
