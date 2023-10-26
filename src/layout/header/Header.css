@@ -1,22 +1,42 @@
-.location-bar,
-.logo-bar,
-.navigation-bar {
+.header-section-bar {
   width: min(1280px, 80%, 1280px);
   margin-inline: auto;
 }
+.location-bar-font {
+  font-size: 0.8rem;
+}
 .location-section {
   border-bottom: 1px solid #e6e6e6;
-  min-height: 42px;
+  min-height: 45px;
   display: flex;
   align-items: center;
 }
-.location {
+.location-bar {
   display: flex;
-  font-size: 0.8rem;
-  min-width: 250px;
+  flex-wrap: wrap;
+}
+.location-group-container {
+  flex: 1 1 50%;
+  /* min-width: 300px; */
+}
+.registration-group-container {
+  /* min-width: 300px; */
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.registration-container {
+  display: flex;
+}
+.location-container {
+  display: flex;
 }
 .location-icon-container {
-  width: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.8rem;
   margin-right: 5px;
 }
 .location-icon-img {
@@ -26,9 +46,7 @@
 .logo-section {
   min-height: 93px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  /* background-color: red; */
 }
 .logo-container,
 .searchbar-component-container,
@@ -40,7 +58,6 @@
   display: flex;
 }
 .logo-container {
-  /* background-color: violet; */
   flex: 1 1 25%;
   display: flex;
   justify-content: flex-start;
@@ -56,13 +73,10 @@
   width: 100%;
 }
 .searchbar-component-container {
-  /* background-color: red; */
   flex: 1 1 50%;
   min-width: 450px;
 }
 .favorites-cart-container {
-  /* background-color: orange; */
-  /* width: 100px; */
   flex: 1 1 25%;
   display: flex;
   justify-content: flex-end;
@@ -82,13 +96,12 @@
 .separator {
   border: 1px solid #e6e6e6;
   height: 50%;
-  margin-inline: 10px;
+  margin-inline: 5px;
 }
 .shoppingbag-component-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 }
 .bag-info {
   font-size: 0.8rem;
@@ -100,9 +113,56 @@
   align-items: center;
   position: relative;
 }
+.langdropdown-component-container {
+  margin-right: 5px;
+}
+.header-location-separator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-@media screen and (max-width: 1125px) {
-  .location {
+@media screen and (max-width: 1024px) {
+  .location-bar-font {
+    font-size: 0.7rem;
+  }
+  .location-icon-container {
+    width: 0.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .location-bar-font {
+    font-size: 0.45rem;
+  }
+  .location-icon-container {
+    width: 0.45rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .location-bar-font {
+    font-size: 0.4rem;
+  }
+  .location-icon-container {
+    width: 0.4rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .location-group-container {
+    min-width: 150px;
+  }
+  .registration-group-container {
+    min-width: 150px;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 190px) {
+  .location-bar {
+    overflow: hidden;
+  }
+}
+
+/* @media screen and (max-width: 1125px) {
+  .location-container {
     font-size: 0.9rem;
   }
   .location-icon-container {
@@ -114,7 +174,6 @@
   }
   .logo-bar {
     flex-wrap: wrap;
-    /* background-color: green; */
   }
   .logo-container {
     margin: 10px auto;
@@ -142,7 +201,7 @@
 }
 
 @media screen and (max-width: 815px) {
-  .location {
+  .location-container {
     font-size: 0.8rem;
   }
   .location-icon-container {
@@ -160,7 +219,6 @@
     justify-content: center;
     min-width: 170px;
     margin-bottom: 10px;
-    /* background-color: red; */
   }
   .nav-menu-container {
     min-width: 350px;
@@ -178,7 +236,6 @@
   .searchbar-section {
     margin-inline: auto;
     justify-content: center;
-    /* height: 90%; */
   }
   .logo-container,
   .searchbar-component-container,
@@ -192,7 +249,7 @@
 }
 
 @media screen and (max-width: 625px) {
-  .location {
+  .location-container {
     font-size: 0.6rem;
   }
   .location-icon-container {
@@ -247,7 +304,7 @@
   .location-section {
     min-height: 25px;
   }
-  .location {
+  .location-container {
     font-size: 0.5rem;
   }
   .location-icon-container {
@@ -304,7 +361,7 @@
   .location-section {
     min-height: 20px;
   }
-  .location {
+  .location-container {
     font-size: 0.4rem;
   }
   .location-icon-container {
@@ -334,4 +391,4 @@
     width: 12px;
     height: 12px;
   }
-}
+} */
