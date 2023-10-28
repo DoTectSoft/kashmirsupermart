@@ -1,114 +1,111 @@
-.footer{
-    display: flex;
-    flex-direction: column;
-    background-color: #191919;
-    align-items: center;
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #191919;
+  align-items: center;
+  overflow: hidden;
 }
 
-.footerContent{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    color: #FFFFFF;
-    padding: 2rem 0 3rem 0;
-    width: min(1280px, 80%, 1280px);
-    border-bottom: 1px solid #333333;
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #ffffff;
+  padding: 2rem 0 3rem 0;
+  width: min(1280px, 80%, 1280px);
+  border-bottom: 1px solid #333333;
 }
-.description{
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    /* border: 1px solid #FFFFFF; */
+.description {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* border: 1px solid #FFFFFF; */
 }
-.footerLogo{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1rem;
-}
-
-.footerPlantLogo{
-    margin-right: 0.5rem;
+.footerLogo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
 }
 
-.footerLogo h3{
-    font-size: 32px;
-    font-weight: 500;
+.footerPlantLogo {
+  margin-right: 0.5rem;
 }
 
-.footerLogoDescription p{
-    font-size: 14px;
-    font-weight: 400;
-    color: #999999;
-    margin-bottom: 1rem;
+.footerLogo h3 {
+  font-size: 32px;
+  font-weight: 500;
 }
 
-.footerContact{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.footerLogoDescription p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+  margin-bottom: 1rem;
 }
 
-.footerContact span{
-    font-size: 14px;
-    font-weight: 400;
-    color: #999999;
-    padding-bottom: 0.5rem;
+.footerContact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.footerPhone{
-    font-size: 14px;
-    font-weight: 500;
-    margin-right: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #20B526;
-}
-.footerEmail{
-    font-size: 14px;
-    font-weight: 500;
-    margin-left: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #20B526;
+.footerContact span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+  padding-bottom: 0.5rem;
 }
 
-
-.col{
-
+.footerPhone {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #20b526;
+}
+.footerEmail {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #20b526;
 }
 
-.col ul{
-    list-style: none;
+.col {
 }
 
-.col ul li{
-    font-size: 14px;
-    font-weight: 400;
-    color: #999999;
+.col ul {
+  list-style: none;
 }
 
-.col h5{
-    font-size: 16px;
-    margin-bottom: 1rem;
-    font-weight: 500;
+.col ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
 }
 
-.copyright{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: min(1280px, 80%, 1280px);
-    padding: 1rem 0;
-    justify-content: space-between;
+.col h5 {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: min(1280px, 80%, 1280px);
+  padding: 1rem 0;
+  justify-content: space-between;
 }
 
 .copyrightText p {
-    color: #808080;
-    font-size: 14px;
-    font-weight: 400;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
 }
-.copyrightImages img{
-    margin: 0 0.5rem;
+.copyrightImages img {
+  margin: 0 0.5rem;
 }
-
-

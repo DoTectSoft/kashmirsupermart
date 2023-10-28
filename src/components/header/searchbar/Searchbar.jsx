@@ -15,13 +15,13 @@ const Searchbar = function () {
                 alt="search icon"
               />
             </picture>
-            <div className="search-input-box">
+            <div className="search-input-box ">
               <input className="input-box" type="text" placeholder="Search" />
             </div>
           </div>
           <div className="search-button-box">
             <input
-              className="search-button"
+              className="search-button logo-bar-font"
               style={{ backgroundColor: Colors.PRIMARY, color: Colors.WHITE }}
               type="button"
               value="Search"

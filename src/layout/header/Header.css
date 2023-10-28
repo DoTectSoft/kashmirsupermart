@@ -1,33 +1,33 @@
 .header-section-bar {
   width: min(1280px, 80%, 1280px);
   margin-inline: auto;
+  /* overflow: hidden; */
 }
 .location-bar-font {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
+.logo-bar-font {
+  font-size: 1rem;
+}
+.nav-bar-font {
+  font-size: 1rem;
+}
+
 .location-section {
+  /* background-color: red; */
   border-bottom: 1px solid #e6e6e6;
   min-height: 45px;
   display: flex;
   align-items: center;
 }
 .location-bar {
+  /* background-color: pink; */
   display: flex;
   flex-wrap: wrap;
 }
 .location-group-container {
+  /* background-color: cyan; */
   flex: 1 1 50%;
-  /* min-width: 300px; */
-}
-.registration-group-container {
-  /* min-width: 300px; */
-  flex: 1 1 50%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.registration-container {
-  display: flex;
 }
 .location-container {
   display: flex;
@@ -36,17 +36,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 0.8rem;
+  width: 1.2rem;
   margin-right: 5px;
 }
 .location-icon-img {
   width: 100%;
 }
+.registration-group-container {
+  /* background-color: yellow; */
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.registration-container {
+  display: flex;
+}
 
 .logo-section {
-  min-height: 93px;
+  min-height: 90px;
   display: flex;
   align-items: center;
+  background-color: red;
 }
 .logo-container,
 .searchbar-component-container,
@@ -56,6 +66,8 @@
 }
 .logo-bar {
   display: flex;
+  /* flex-wrap: nowrap; */
+  background-color: pink;
 }
 .logo-container {
   flex: 1 1 25%;
@@ -64,24 +76,45 @@
   align-items: center;
   min-width: 250px;
   max-width: 300px;
+  background-color: cyan;
 }
 .logo-img {
-  width: 90%;
+  width: 100%;
 }
 .search-cart-container {
   display: flex;
+  flex-wrap: wrap-reverse;
   width: 100%;
+  background-color: yellow;
 }
 .searchbar-component-container {
   flex: 1 1 50%;
+  min-width: 450px;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar-container {
+  height: 90%;
+  min-width: 100px;
+  border-radius: 6px;
+  min-width: 260px;
+}
+.searchbar-section {
   min-width: 450px;
 }
 .favorites-cart-container {
   flex: 1 1 25%;
   display: flex;
   justify-content: flex-end;
-  min-width: 200px;
-  max-width: 250px;
+  background-color: violet;
+}
+.favorites-icon-container {
+  height: 40px;
+}
+.bag-icon-container {
+  height: 40px;
 }
 .favorites-component-container {
   display: flex;
@@ -92,6 +125,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 .separator {
   border: 1px solid #e6e6e6;
@@ -102,19 +136,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: white; */
 }
-.bag-info {
-  font-size: 0.8rem;
+/* .bag-info {
   min-width: 60px;
-}
+} */
 .navbar-section {
   min-height: 60px;
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .langdropdown-component-container {
   margin-right: 5px;
+  /* background-color: orange; */
+}
+.currencydropdown-component-container {
+  margin-right: 5px;
+  /* background-color: lightseagreen; */
 }
 .header-location-separator-container {
   display: flex;
@@ -122,273 +162,282 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1441px) {
+  .location-bar-font {
+    font-size: 1rem;
+  }
+  .location-icon-container {
+    width: 1.1rem;
+  }
+  .logo-img {
+    width: 90%;
+  }
+  .searchbar-section {
+    max-width: 350px;
+  }
+  .searchbar-component-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    /* background-color: green; */
+  }
+  .favorites-cart-container {
+    min-width: 150px;
+    /* background-color: peachpuff; */
+  }
+  .searchbar-container {
+    height: 75%;
+    min-width: 100px;
+    border-radius: 4px;
+    min-width: 260px;
+  }
+  .search-cart-container {
+    flex: 1 1 75%;
+    min-width: 300px;
+    /* background-color: blueviolet; */
+  }
+}
+@media screen and (max-width: 1025px) {
   .location-bar-font {
     font-size: 0.7rem;
   }
   .location-icon-container {
     width: 0.7rem;
   }
+  .logo-section {
+    min-height: 125px;
+  }
+  .logo-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo-img {
+    width: 80%;
+  }
+  .logo-container {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .searchbar-section {
+    justify-content: flex-start;
+  }
+  .searchbar-section {
+    max-width: 430px;
+  }
+  .searchbar-container {
+    height: 75%;
+    min-width: 100px;
+    border-radius: 4px;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+  .location-section {
+    min-height: 35px;
+  }
   .location-bar-font {
     font-size: 0.45rem;
   }
   .location-icon-container {
     width: 0.45rem;
   }
-}
-@media screen and (max-width: 425px) {
-  .location-bar-font {
-    font-size: 0.4rem;
+  .logo-section {
+    min-height: 85px;
   }
-  .location-icon-container {
-    width: 0.4rem;
-  }
-}
-@media screen and (max-width: 375px) {
-  .location-group-container {
-    min-width: 150px;
-  }
-  .registration-group-container {
-    min-width: 150px;
-    justify-content: flex-start;
-  }
-}
-@media screen and (max-width: 190px) {
-  .location-bar {
-    overflow: hidden;
-  }
-}
-
-/* @media screen and (max-width: 1125px) {
-  .location-container {
-    font-size: 0.9rem;
-  }
-  .location-icon-container {
-    width: 10px;
-  }
-  .bag-info {
-    font-size: 0.8rem;
-    min-width: 60px;
-  }
-  .logo-bar {
-    flex-wrap: wrap;
-  }
-  .logo-container {
-    margin: 10px auto;
-    justify-content: center;
-  }
-  .searchbar-component-container {
-    flex: 1 1 75%;
-  }
-  .favorites-cart-container {
-    flex: 1 1 25%;
-  }
-  .search-cart-container {
-    margin-bottom: 10px;
-  }
-  .searchbar-section {
-    max-width: 450px;
-    justify-content: flex-start;
-  }
-  .logo-container,
-  .searchbar-component-container,
-  .favorites-cart-container {
-    min-height: 40px;
-    max-height: 40px;
-  }
-}
-
-@media screen and (max-width: 815px) {
-  .location-container {
-    font-size: 0.8rem;
-  }
-  .location-icon-container {
-    width: 9px;
-  }
-  .bag-info {
-    font-size: 0.8rem;
-    min-width: 60px;
-  }
-  .search-cart-container {
-    flex-wrap: wrap-reverse;
-  }
-  .favorites-cart-container {
-    margin-inline: auto;
-    justify-content: center;
-    min-width: 170px;
-    margin-bottom: 10px;
-  }
-  .nav-menu-container {
-    min-width: 350px;
-    max-width: 350px;
-    font-size: 0.8rem;
-  }
-  .phone-container {
-    min-width: 130px;
-    max-width: 130px;
-    font-size: 0.8rem;
-  }
-  .searchbar-component-container {
-    min-width: 300px;
-  }
-  .searchbar-section {
-    margin-inline: auto;
-    justify-content: center;
-  }
-  .logo-container,
-  .searchbar-component-container,
-  .favorites-cart-container {
-    min-height: 35px;
-    max-height: 35px;
-  }
-  .navbar-section {
-    min-height: 50px;
-  }
-}
-
-@media screen and (max-width: 625px) {
-  .location-container {
-    font-size: 0.6rem;
-  }
-  .location-icon-container {
-    width: 8px;
-  }
-  .nav-menu-container {
-    min-width: 300px;
-    max-width: 300px;
-    font-size: 0.7rem;
-  }
-  .phone-container {
-    min-width: 110px;
-    max-width: 110px;
-    font-size: 0.7rem;
-  }
-  .searchbar-section {
-    margin-inline: auto;
-    justify-content: center;
+  .logo-img {
+    width: 50%;
   }
   .logo-container,
   .searchbar-component-container,
   .favorites-cart-container {
     min-height: 30px;
-    max-height: 30px;
   }
-  .search-button {
-    font-size: 0.6rem;
-  }
-  .input-box {
-    font-size: 0.6rem;
-  }
-  .bag-info {
-    font-size: 0.6rem;
-    min-width: 60px;
-  }
-  .phoneicon-container {
-    width: 13px;
-    height: 13px;
-  }
-  .favorites-icon-container {
-    min-width: 30px;
-  }
-  .bag-icon-container {
-    min-width: 30px !important;
-  }
-  .navbar-section {
-    min-height: 40px;
-  }
-}
-
-@media screen and (max-width: 515px) {
-  .location-section {
-    min-height: 25px;
-  }
-  .location-container {
+  .logo-bar-font {
     font-size: 0.5rem;
   }
-  .location-icon-container {
-    width: 7px;
-  }
-
-  .logo-img {
-    width: 70%;
+  .favorites-cart-container {
+    min-width: 150px;
+    /* background-color: green; */
+    flex-wrap: nowrap;
   }
   .favorites-icon-container {
-    min-width: 15px;
+    height: 25px;
   }
   .bag-icon-container {
-    min-width: 15px !important;
-  }
-  .bag-info {
-    font-size: 0.5rem;
+    height: 25px;
   }
   .searchbar-section {
-    max-width: 250px;
+    min-width: 150px;
+    /* background-color: cyan; */
+  }
+  .searchbar-component-container {
+    min-width: 150px;
   }
   .searchbar-container {
+    height: 75%;
+    min-width: 100px;
     border-radius: 4px;
   }
-  .search-button {
-    font-size: 0.45rem;
-  }
-  .navbar-section {
-    min-height: 30px;
-  }
-  .nav-menu-container {
-    min-width: 250px;
-    max-width: 250px;
-    font-size: 0.5rem;
-  }
-  .phone-container {
-    min-width: 90px;
-    max-width: 90px;
-    font-size: 0.5rem;
-  }
-  .phoneicon-container {
-    width: 10px;
-    height: 10px;
-  }
-  .logo-container,
-  .searchbar-component-container,
-  .favorites-cart-container {
-    min-height: 20px;
-    max-height: 20px;
+  .logo-container {
+    margin-bottom: 5px;
   }
 }
 
 @media screen and (max-width: 426px) {
   .location-section {
-    min-height: 20px;
+    min-height: 30px;
   }
-  .location-container {
+  .location-bar-font {
     font-size: 0.4rem;
   }
   .location-icon-container {
-    width: 6px;
+    width: 0.45rem;
+  }
+  .logo-section {
+    min-height: 70px;
   }
   .logo-img {
-    width: 65%;
+    width: 50%;
   }
-  .nav-menu-container {
-    display: none;
+  .logo-container,
+  .searchbar-component-container,
+  .favorites-cart-container {
+    min-height: 25px;
   }
-  .burger-menu {
-    display: block;
+  .logo-bar-font {
+    font-size: 0.4rem;
   }
-  .search-button {
-    font-size: 0.5rem;
+  .favorites-icon-container {
+    height: 20px;
   }
-  .navbar-section {
+  .bag-icon-container {
+    height: 20px;
+  }
+  .favorites-cart-container {
+    min-width: 100px;
+  }
+  .searchbar-component-container {
+    min-width: 100px;
+  }
+  .searchbar-container {
+    height: 65%;
+    min-width: 100px;
+    border-radius: 2px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .location-section {
+    min-height: 50px;
+  }
+  .location-group-container {
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .location-icon-container {
+    width: 0.65rem;
+  }
+  .location-bar-font {
+    font-size: 0.6rem;
+  }
+  .registration-group-container {
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-img {
+    width: 80%;
+  }
+  .logo-container,
+  .searchbar-component-container,
+  .favorites-cart-container {
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-bar-font {
+    font-size: 0.6rem;
+  }
+  .searchbar-section {
+    height: 75%;
+  }
+  .searchbar-container {
+    min-width: 250px;
+    border-radius: 4px;
+  }
+  .search-cart-container {
+    display: flex;
+    justify-content: center;
+  }
+  .favorites-component-container {
+    height: 50%;
+  }
+  .shoppingbag-component-container {
+    height: 50%;
+  }
+  .favorites-icon-container {
+    height: 25px;
+  }
+  .favorites-cart-container {
+    min-width: 250px;
+  }
+  .searchbar-component-container {
+    min-width: 250px;
+  }
+  .bag-icon-container {
+    height: 25px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .location-section {
+    min-height: 35px;
+  }
+  .location-group-container {
+    min-width: 150px;
+  }
+  .location-icon-container {
+    width: 0.45rem;
+  }
+  .location-bar-font {
+    font-size: 0.4rem;
+  }
+  .registration-group-container {
+    min-width: 150px;
+  }
+
+  .logo-img {
+    width: 70%;
+    /* background-color: blanchedalmond; */
+  }
+  .logo-container,
+  .searchbar-component-container,
+  .favorites-cart-container {
     min-height: 30px;
   }
-  .phone-container {
-    min-width: 100px;
-    max-width: 100px;
-    font-size: 0.55rem;
+  .favorites-cart-container {
+    min-width: 150px;
   }
-  .phoneicon-container {
-    width: 12px;
-    height: 12px;
+  .logo-bar-font {
+    font-size: 0.5rem;
   }
-} */
+  .searchbar-section {
+    height: 80%;
+  }
+  .favorites-icon-container {
+    height: 25px;
+  }
+  .searchbar-component-container {
+    min-width: 150px;
+  }
+  .searchbar-container {
+    min-width: 150px;
+    border-radius: 2px;
+  }
+  .bag-icon-container {
+    height: 25px;
+  }
+}
