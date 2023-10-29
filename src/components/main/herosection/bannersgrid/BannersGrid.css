@@ -1,0 +1,10 @@
+.hero-banners-container {
+  display: flex;
+}
+.hero-bigbanner-section {
+  display: flex;
+}
+.hero-smallbanner-section {
+  display: flex;
+  flex-direction: column;
+}
