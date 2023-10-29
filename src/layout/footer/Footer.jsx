@@ -11,7 +11,7 @@ const Footer = function () {
             <div className="description">
               <div className="footerLogo">
                 <img className="footerPlantLogo" src={plant}/>
-                <h3>Ecobazar</h3>
+                <h3>Kashmir Supermart</h3>
               </div>
               <div className="footerLogoDescription">
                 <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>

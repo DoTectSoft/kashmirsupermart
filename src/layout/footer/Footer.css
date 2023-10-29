@@ -1,11 +1,10 @@
-.footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #191919;
-  align-items: center;
-  overflow: hidden;
-}
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+    align-items: center;
+}
 .footerContent {
   display: flex;
   flex-direction: row;
