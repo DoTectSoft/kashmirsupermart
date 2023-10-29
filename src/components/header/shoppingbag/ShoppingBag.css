@@ -1,11 +1,13 @@
+.bag-baginfo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .bag-icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-right: 15px; */
-  /* width: 100%; */
-  min-width: 42px;
-  height: 100%;
+  /* height: 25px; */
   /* background-color: red; */
 }
 .bag-icon-img {
@@ -17,10 +19,8 @@
 }
 .bag-info {
   /* background-color: green; */
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 100px;
   margin-left: 10px;
 }

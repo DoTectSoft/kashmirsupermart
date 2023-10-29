@@ -1,0 +1,13 @@
+.dropdown-container {
+  display: flex;
+}
+.dropdown-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2px;
+  /* background-color: red; */
+}
+.dropdown-img {
+  width: 100%;
+}
