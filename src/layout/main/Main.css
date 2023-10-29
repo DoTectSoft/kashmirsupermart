@@ -1,6 +1,7 @@
 .main-container {
-  /* background-color: orange; */
-  width: min(1280px, 80%, 1280px);
+  background-color: orange;
+  /* width: min(1280px, 80%, 1280px); */
   margin-inline: auto;
   overflow: hidden;
+  
 }
