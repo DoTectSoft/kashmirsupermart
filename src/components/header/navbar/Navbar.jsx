@@ -6,7 +6,7 @@ import "./Navbar.css";
 
 const Navbar = function ({ isVisible, setIsVisible }) {
   return (
-    <div className="navigation-bar-container">
+    <div className="navigation-bar-container nav-bar-font">
       <nav className="nav-menu-container">
         <ul className="nav-menu-list">
           <li>

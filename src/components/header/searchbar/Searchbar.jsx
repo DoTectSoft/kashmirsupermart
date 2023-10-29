@@ -16,7 +16,11 @@ const Searchbar = function () {
               />
             </picture>
             <div className="search-input-box ">
-              <input className="input-box" type="text" placeholder="Search" />
+              <input
+                className="input-box logo-bar-font"
+                type="text"
+                placeholder="Search"
+              />
             </div>
           </div>
           <div className="search-button-box">

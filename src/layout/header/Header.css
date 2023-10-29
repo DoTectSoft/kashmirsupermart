@@ -4,13 +4,13 @@
   overflow: hidden;
 }
 .location-bar-font {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .logo-bar-font {
   font-size: 1rem;
 }
 .nav-bar-font {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .location-section {
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.2rem;
+  width: 1.1rem;
   margin-right: 5px;
 }
 .location-icon-img {
@@ -143,8 +143,9 @@
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
 .langdropdown-component-container {
   margin-right: 5px;
   /* background-color: orange; */
@@ -161,13 +162,16 @@
 
 @media screen and (max-width: 1440px) {
   .location-bar-font {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .logo-bar-font {
     font-size: 0.9rem;
   }
+  .nav-bar-font {
+    font-size: 1.1rem;
+  }
   .location-icon-container {
-    width: 1.1rem;
+    width: 1rem;
   }
   .logo-img {
     width: 90%;
@@ -205,6 +209,9 @@
   }
   .logo-bar-font {
     font-size: 0.8rem;
+  }
+  .nav-bar-font {
+    font-size: 1rem;
   }
   .location-icon-container {
     width: 0.7rem;
@@ -248,6 +255,9 @@
   .location-bar-font {
     font-size: 0.45rem;
   }
+  .nav-bar-font {
+    font-size: 0.5rem;
+  }
   .location-icon-container {
     width: 0.45rem;
   }
@@ -277,7 +287,7 @@
     height: 25px;
   }
   .searchbar-section {
-    min-width: 150px;
+    min-width: 190px;
     /* background-color: cyan; */
   }
   .searchbar-component-container {
@@ -291,6 +301,15 @@
   .logo-container {
     margin-bottom: 5px;
   }
+  .navbar-section {
+    min-height: 40px;
+  }
+  .nav-bar-font {
+    font-size: 0.5rem;
+  }
+  .phoneicon-container {
+    width: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -300,6 +319,7 @@
   .location-bar-font {
     font-size: 0.4rem;
   }
+
   .location-icon-container {
     width: 0.45rem;
   }
@@ -333,6 +353,24 @@
     height: 65%;
     min-width: 100px;
     border-radius: 2px;
+  }
+  .navbar-section {
+    min-height: 35px;
+  }
+  .nav-menu-container {
+    display: none;
+  }
+  .nav-bar-font {
+    font-size: 0.5rem;
+  }
+  .burger-container {
+    width: 0.7rem;
+  }
+  .phoneicon-container {
+    width: 0.6rem;
+  }
+  .burger-menu {
+    display: block;
   }
 }
 @media screen and (max-width: 375px) {
@@ -372,6 +410,7 @@
   }
   .searchbar-section {
     height: 75%;
+    justify-content: center;
   }
   .search-cart-container {
     min-width: 250px;
@@ -401,6 +440,18 @@
   }
   .bag-icon-container {
     height: 25px;
+  }
+  .navbar-section {
+    min-height: 35px;
+  }
+  .nav-bar-font {
+    font-size: 0.6rem;
+  }
+  .burger-container {
+    width: 0.8rem;
+  }
+  .phoneicon-container {
+    width: 0.7rem;
   }
 }
 @media screen and (max-width: 320px) {
@@ -456,5 +507,8 @@
   }
   .bag-icon-container {
     height: 25px;
+  }
+  .navbar-section {
+    min-height: 30px;
   }
 }
