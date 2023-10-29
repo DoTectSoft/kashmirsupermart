@@ -1,6 +1,13 @@
+import HeroSection from "../../components/main/herosection/HeroSection";
 import "./Homepage.css";
 const Homepage = function () {
-  return <div>Homepage</div>;
+  return (
+    <>
+      <section className="hero-section">
+        <HeroSection />
+      </section>
+    </>
+  );
 };
 
 export default Homepage;
