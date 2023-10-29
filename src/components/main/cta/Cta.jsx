@@ -1,8 +1,8 @@
 import "./Cta.css";
-import instagram from "../../assets/instagram.svg";
-import twitter from "../../assets/twitter.svg";
-import pinterest from "../../assets/pinterest.svg";
-import facebook from "../../assets/facebook.svg";
+import instagram from "../../../assets/instagram.svg";
+import twitter from "../../../assets/twitter.svg";
+import pinterest from "../../../assets/pinterest.svg";
+import facebook from "../../../assets/facebook.svg";
 
 import React from 'react'
 
